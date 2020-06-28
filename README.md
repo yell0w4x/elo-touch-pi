@@ -22,8 +22,10 @@ Add these lines before the `exit 0` statement.
 In the `touch-control` folder there is an example GUI for controlling touchscreen. 
 To start it's necessary to install tkinter for python3.
  
-`sudo apt install python3-tk`
-`pip3 install -r requirements.txt`
+```
+sudo apt install python3-tk
+pip3 install -r requirements.txt
+```
 
 Then run it by passing ip address of your raspberry e.g. `./app.py 192.168.1.77`.
 
