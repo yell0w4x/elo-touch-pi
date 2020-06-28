@@ -20,9 +20,7 @@ def packet(x, y, type):
     if type not in (TOUCH, MOVE, RELEASE):
         raise InvalidPacketTypeError('Invalid packet type specified')
 
-    p = bytes(b'T')
-    p += type + lsb(x) + msb(x) + lsb(y) + msb(y) + (b'\x20\x00' if type != RELEASE else b'\x00\x00')
-    return p
+    return b'T' + type + lsb(x) + msb(x) + lsb(y) + msb(y) + (b'\x20\x00' if type != RELEASE else b'\x00\x00')
 
 
 def touch_packet(x, y):
