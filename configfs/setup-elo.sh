@@ -61,5 +61,4 @@ cat "${SCRIPT_DIR}/hid-report-descriptor.bin" > functions/hid.usb0/report_desc
 
 # assign function to configuration
 ln -s functions/hid.usb0 configs/conf.1
-# replace the name '20980000.usb' with one found under /sys/class/udc/ in your target system
-echo 20980000.usb > UDC
+ls /sys/class/udc > UDC
