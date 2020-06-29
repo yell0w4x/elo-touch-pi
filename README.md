@@ -2,6 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
+Allows control devices remotely through network.
 The emulator is made according to this [manual](https://wiki.tizen.org/USB/Linux_USB_Layers/Configfs_Composite_Gadget).
 On how to enabled g_hid support on raspberry see [this](https://gist.github.com/gbaman/50b6cca61dd1c3f88f41).
 
